@@ -8,7 +8,6 @@ export const postCourseRoute: FastifyPluginAsyncZod = async (server) => {
         schema: {
             tags: ['Courses'],
             summary: 'Create a new course',
-            description: 'This route receives a title and creates a new course',
             body: z.object({
                 title: z.string().min(5, 'Course title must be at least 5 characters long'),
             }),
