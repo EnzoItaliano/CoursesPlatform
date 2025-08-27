@@ -72,10 +72,10 @@ This project is licensed under the ISC License.
 ### System Flow
 
 ```mermaid
-graph LR
-    participant Client as "Client"
-    participant API as "API"
-    participant Database as "Database"
+sequenceDiagram
+    participant Client
+    participant API
+    participant Database
 
     Client->>API: POST /courses
     API->>Database: Create course
@@ -91,6 +91,7 @@ graph LR
     API->>Database: Retrieve course by ID
     Database->>API: Course retrieved
     API->>Client: Course details
+
 ```
 
 This diagram shows the main flow of the application, including the creation of a new course, retrieval of all courses, and retrieval of a single course by ID.
