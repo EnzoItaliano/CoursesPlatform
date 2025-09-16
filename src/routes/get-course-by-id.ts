@@ -36,6 +36,6 @@ export const getCourseByIdRoute: FastifyPluginAsyncZod = async (server) => {
             return {course: result[0]}
         }
 
-        return reply.status(404)
+        return reply.status(404).send()
     })
 }
