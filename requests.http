@@ -1,8 +1,9 @@
 POST http://localhost:3333/courses
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MGY3ODM2Ny1kZDBlLTQyNzEtYWRjMS04Y2QyYmQ2ZWI1NmYiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTc1ODQ3NjY2Nn0.nWbr6CLPoLcJYCjaU5IJ7Z3dN1LO0VnLxgRnb9qfoK8
 
 {
-    "title": "Curso de Docker"
+    "title": "Curso de React"
 }
 
 ###
@@ -11,4 +12,14 @@ GET http://localhost:3333/courses?page=2
 
 ###
 
-GET http://localhost:3333/courses/890b1a5f-9708-428a-be02-0a367c7362c4
+GET http://localhost:3333/courses/03b1aaba-9ad7-4de5-9986-f596c2d87c92
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZjhhN2RjNi0zMjY4LTQxOTUtOWZmZi03MzUyMTBjNjJjY2YiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTc1ODQ2NzMyN30.KJvf4EdjViwctzBva0pdJ6DmI6oISmwCM20BwNrBy08
+
+###
+POST http://localhost:3333/sessions
+Content-Type: application/json
+
+{
+    "email": "Lavinia_Barros78@gmail.com",
+    "password": "123456"
+}
