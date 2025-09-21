@@ -17,5 +17,5 @@ jobs:
       - run: npm ci
       - name: Run Drizzle CLI migrations
         env:
-          MIGRATIONS_DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: npx drizzle-kit migrate
